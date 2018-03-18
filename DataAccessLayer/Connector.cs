@@ -12,5 +12,6 @@ namespace DataAccessLayer
         public abstract Data getData();
         public abstract Block getBlock();
         public abstract BlockChain getBlockChain();
+        public abstract Block getMyLastBlock();
     }
 }
