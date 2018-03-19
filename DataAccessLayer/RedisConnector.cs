@@ -34,5 +34,25 @@ namespace DataAccessLayer
         {
             lazyConnection.Value.GetDatabase().ListGetByIndex($"", 0);
         }
+
+        public override Block getMyLastBlock()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void setBlock(Block block)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void setBlockChain(BlockChain blockChain)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool isFirstBlock(Block block)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

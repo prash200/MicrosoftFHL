@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace BlockSyncSvc
 {
-    public partial class Service1 : ServiceBase
+    public partial class BlockSyncerService : ServiceBase
     {
-        public Service1()
+        public BlockSyncerService()
         {
             InitializeComponent();
         }

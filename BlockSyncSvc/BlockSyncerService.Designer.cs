@@ -1,6 +1,6 @@
 ﻿namespace BlockSyncSvc
 {
-    partial class Service1
+    partial class BlockSyncerService
     {
         /// <summary> 
         /// Required designer variable.

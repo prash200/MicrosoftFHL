@@ -1,6 +1,6 @@
 ﻿namespace BlockValidatorSvc
 {
-    partial class Service1
+    partial class BlockValidatorService
     {
         /// <summary> 
         /// Required designer variable.

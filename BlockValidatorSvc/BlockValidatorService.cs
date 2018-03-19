@@ -18,9 +18,7 @@ namespace BlockValidatorSvc
 
         public BlockValidatorService()
         {
-            InitializeComponent();
-
-            //this.ValidateBlock(b);
+            InitializeComponent();           
         }
 
         protected override void OnStart(string[] args)
@@ -31,11 +29,11 @@ namespace BlockValidatorSvc
         {
         }
 
-        private bool ValidateBlock(Block b)
+        private bool isValid(Block b)
         {
             //validate hash
-            Block lastBlock = this.connector.getMyLastBlock();
-            if(b.prevHash.Equals(lastBlock.hash))
+            Block lastBlock = this.connector.getMyLastBlock();//@pra - how do you determine if its the first block and what should be the validation for the same?
+            if(b != null && b.prevHash.Equals(lastBlock.hash))
             {
                 return true;
             }
